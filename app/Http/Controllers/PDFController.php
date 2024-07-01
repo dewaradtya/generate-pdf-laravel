@@ -13,4 +13,11 @@ class PDFController extends Controller
         $pdf = PDF::loadView('pdf.document', $data);
         return $pdf->stream();
     }
+
+    public function PO()
+    {
+        $data = ['title' => 'po'];
+        $pdf = PDF::loadView('pdf.po', $data);
+        return $pdf->stream();
+    }
 }

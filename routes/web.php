@@ -9,4 +9,5 @@ Route::get('/', function () {
 });
 
 Route::get('/generate-pdf', [PDFController::class, 'generatePDF'])->name('generate-pdf');
+Route::get('/po', [PDFController::class, 'PO'])->name('po');
 Route::get('/home', [PageController::class, 'home']);
