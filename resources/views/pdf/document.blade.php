@@ -85,21 +85,12 @@
             text-align: right;
             background-color: rgb(241, 245, 249);
         }
-
-        .align-colon {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .align-colon div {
-            margin-left: 20px; /* Atur margin sesuai kebutuhan */
-        }
     </style>
 </head>
 <table class="w-full mb-4">
     <tr>
         <td class="">
-            <img src="{{ asset('img/nugroho.png') }}"  width="90" />
+            <img src="{{ asset('/img/nugroho.png') }}" alt="nugroho" width="100" />
         </td>
         <td class="w-center">
             <div>
@@ -109,9 +100,9 @@
             <div>MAINTENANCE and REPAIR</div>
         </td>
         <td class="w-half">
-            <div>Invoice No : 177/INV/PT.NAS/X/2023</div>
-            <div>Page : 1/1</div>
-            <div>Date : 17 October 2023</div>
+            <div><span style="margin-right:28px;">Invoice No </span> : 177/INV/PT.NAS/X/2023</div>
+            <div><span style="margin-right:56px;">Page </span> : 1/1</div>
+            <div><span style="margin-right:58px;">Date </span> : 17 October 2023</div>
         </td>
     </tr>
 </table>
@@ -244,7 +235,7 @@
                 <div class="mb-4">Penerima</div>
                 <br>
                 <br>
-                <div>(.............................)</div>
+                <div>(........................................)</div>
             </td>
             <td class="w-half text-center">
                 <div class="mb-4">Hormat Kami</div>

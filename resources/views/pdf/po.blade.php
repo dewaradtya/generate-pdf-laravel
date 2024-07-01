@@ -86,41 +86,37 @@
             background-color: rgb(241, 245, 249);
         }
 
-        .align-colon {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .align-colon div {
-            margin-left: 20px;
-            /* Atur margin sesuai kebutuhan */
-        }
-
         .btn-gray {
-            background-color: rgb(202, 202, 202);
+            background-color: rgb(217, 215, 215);
             border: none;
-            padding: 5px 30px;
+            padding: 5px 35px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
-            font-size: 14px;
-            margin: 4px 2px;
+            margin-left: 100px;
             cursor: pointer;
-            border-radius: 4px;
         }
 
         .custom-hr {
             width: 50%;
-            border: 1px solid #666;
-            margin-top: 5px;
-            margin: 0;
+            border: 1px solid #cecece;
+            margin: 5px 0px;
+        }
+
+        .text {
+            margin: 0px;
+            width: 70%;
+        }
+
+        .signature {
+            margin-left: 50%;
         }
     </style>
 </head>
 <table class="w-full mb-4">
     <tr>
         <td class="">
-            <img src="{{ asset('img/nugroho.png') }}" width="90" />
+            <img src="{{ asset('/img/nugroho.png') }}" alt="nugroho" width="100" />
         </td>
         <td class="w-center">
             <div>
@@ -131,9 +127,9 @@
         </td>
         <td class="w-half">
             <button class="btn-gray">Purcase Order</button>
-            <div>Referensi : 023/PO/PT.NAS/VII/2022</div>
-            <div>Tanggal : 27/07/2022</div>
-            <div>Date : 17 October 2023</div>
+            <span style="margin-right:28px;">Referensi</span> : <span style="margin-left:24px;">023/PO/PT.NAS/VII/2022</span>
+            <span style="margin-right:37px;">Tanggal </span>: <span style="margin-left:100px;">27/07/2022</span>
+            <span style="margin-right:8px;">Delivery Date </span>: <span style="margin-left:70px;">17 October 2023</span>
         </td>
     </tr>
 </table>
@@ -152,7 +148,7 @@
     <div class="mb-4">-</div>
 </div>
 
-<p>Bersama ini kami mohon dikirimkan barang barang tersebut dibawah ini:</p>
+<p class="text">Bersama ini kami mohon dikirimkan barang barang tersebut dibawah ini:</p>
 <table class="custom-table">
     <thead>
         <tr class="head-table">
@@ -165,7 +161,7 @@
     </thead>
     <tbody>
         <tr>
-            <th scope="row">1</th>
+            <th scope="row">-</th>
             <td>Accu-Chek Instant 100 Test Strips</td>
             <td>50</td>
             <td>Rp. 326,688 </td>
@@ -185,21 +181,16 @@
         </tr>
     </tbody>
 </table>
-<p class="col-8">Mohon dapat segera diberikan order konfirmasi/persetujuan atas penjualan kami ini. Atas
+<p class="mt-2" style="width: 70%; margin-bottom:100px;">Mohon dapat segera diberikan order konfirmasi/persetujuan
+    atas penjualan kami ini. Atas
     perhatian dan kerjasamanya kami ucapkan terimakasih</p>
 
-<div class="margin-top">
-    <table class="w-full">
-        <tr>
-            <td class="w-half text-center">
-                <div class="mb-4">Hormat Kami</div>
-                <br>
-                <br>
-                <div style="font-weight: bold; text-decoration: underline;">Yessy Ummafiyanti</div>
-                <div>Direktur</div>
-            </td>
-        </tr>
-    </table>
+<div class="signature text-center">
+    <div class="mb-4">Hormat Kami</div>
+    <br>
+    <br>
+    <div style="font-weight: bold; text-decoration: underline;">Yessy Ummafiyanti</div>
+    <div>Direktur</div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
