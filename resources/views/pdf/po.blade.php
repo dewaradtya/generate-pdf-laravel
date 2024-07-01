@@ -46,7 +46,7 @@
         .w-half {
             width: 45%;
         }
-        
+
         .w-center {
             width: 55%;
         }
@@ -92,14 +92,35 @@
         }
 
         .align-colon div {
-            margin-left: 20px; /* Atur margin sesuai kebutuhan */
+            margin-left: 20px;
+            /* Atur margin sesuai kebutuhan */
+        }
+
+        .btn-gray {
+            background-color: rgb(202, 202, 202);
+            border: none;
+            padding: 5px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .custom-hr {
+            width: 50%;
+            border: 1px solid #666;
+            margin-top: 5px;
+            margin: 0;
         }
     </style>
 </head>
 <table class="w-full mb-4">
     <tr>
         <td class="">
-            <img src="{{ asset('img/nugroho.png') }}"  width="90" />
+            <img src="{{ asset('img/nugroho.png') }}" width="90" />
         </td>
         <td class="w-center">
             <div>
@@ -109,143 +130,67 @@
             <div>MAINTENANCE and REPAIR</div>
         </td>
         <td class="w-half">
-            <div>Invoice No : 177/INV/PT.NAS/X/2023</div>
-            <div>Page : 1/1</div>
+            <button class="btn-gray">Purcase Order</button>
+            <div>Referensi : 023/PO/PT.NAS/VII/2022</div>
+            <div>Tanggal : 27/07/2022</div>
             <div>Date : 17 October 2023</div>
         </td>
     </tr>
 </table>
 
-<h1 class="text-center" style="font-size: 18px">{{ $title }}</h1>
 <div class="margin-top">
-    <table class="w-full">
-        <tr>
-            <td class="left">
-                <div>
-                    <h6>Customer:</h6>
-                </div>
-                <div style="text-decoration: underline;">RS Bhayangkara Samsoeri</div>
-                <div>Jl. Ahmad Yani No.116, Surabaya.</div>
-            </td>
-            <td class="right">
-                <div>
-                    <h6>Project:</h6>
-                </div>
-                <div>Pengadaan Lab ( Inv 177 )</div>
-            </td>
-        </tr>
-    </table>
-</div>
-<div class="margin-top mb-4">
-    <table class="w-full">
-        <tr>
-            <td class="left">
-                <div>
-                    <h6>Due Date Payment</h6>
-                </div>
-                <div>21 November 2023</div>
-            </td>
-            <td class="right">
-                <div>
-                    <h6>Payment Term :</h6>
-                </div>
-            </td>
-        </tr>
-    </table>
+    <div>
+        <h6>Supplier:</h6>
+        <hr class="custom-hr">
+    </div>
+    <div class="mb-4">
+        <h6>PT. Roche Indonesia</h6>
+    </div>
+    <div>
+        <h6>Alamat Pengiriman</h6>
+    </div>
+    <div class="mb-4">-</div>
 </div>
 
+<p>Bersama ini kami mohon dikirimkan barang barang tersebut dibawah ini:</p>
 <table class="custom-table">
     <thead>
         <tr class="head-table">
-            <th scope="col">No</th>
-            <th scope="col">Produk / Jasa</th>
-            <th scope="col">Kode / Merek</th>
+            <th scope="col">No. Model</th>
+            <th scope="col">Produk Name</th>
             <th scope="col">Qty</th>
-            <th scope="col">Satuan</th>
-            <th scope="col">Harga Satuan</th>
-            <th scope="col">Total Harga</th>
+            <th scope="col">Unit Price (Exc PPN)</th>
+            <th scope="col">Total Price</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <th scope="row">1</th>
-            <td>Stick Narkoba Test 6 Parameter</td>
-            <td>Glory</td>
-            <td>29</td>
-            <td>box</td>
-            <td>Rp. 1,936,937 </td>
-            <td>Rp. 56,171,173</td>
+            <td>Accu-Chek Instant 100 Test Strips</td>
+            <td>50</td>
+            <td>Rp. 326,688 </td>
+            <td>Rp. 16,334,400</td>
         </tr>
         <tr>
-            <th scope="row">2</th>
-            <td>Vacum Tube Plain</td>
-            <td>GP</td>
-            <td>12</td>
-            <td>box</td>
-            <td>Rp. 166,667 </td>
-            <td>Rp. 2,000,004</td>
+            <td colspan="4" class="text-right">Total</td>
+            <td colspan="1">Rp. 16,334,400</td>
         </tr>
         <tr>
-            <th scope="row">3</th>
-            <td>Pot Napza Non Steril Uk. 60 ml</td>
-            <td>Onemed</td>
-            <td>600</td>
-            <td>pcs</td>
-            <td>Rp. 5,541</td>
-            <td>Rp. 3,324,600</td>
+            <td colspan="4" class="text-right">PPN 11%</td>
+            <td colspan="1">Rp. 1,796,784</td>
         </tr>
         <tr>
-            <th scope="row">4</th>
-            <td>Blue Tip Isi 500 Pcs</td>
-            <td>Onemed</td>
-            <td>5</td>
-            <td>pack</td>
-            <td>Rp. 77,027</td>
-            <td>Rp. 385,135</td>
-        </tr>
-        <tr>
-            <th scope="row">5</th>
-            <td>Blood Lancet Isi 100 Pcs</td>
-            <td>-</td>
-            <td>10</td>
-            <td>box</td>
-            <td>Rp. 20,721</td>
-            <td>Rp. 207,210</td>
-        </tr>
-        <tr>
-            <th scope="row">6</th>
-            <td>Label Therma</td>
-            <td>-</td>
-            <td>2</td>
-            <td>roll</td>
-            <td>Rp. 158,368</td>
-            <td>Rp. 316,736</td>
-        </tr>
-        <tr>
-            <td colspan="6" class="text-right">Total</td>
-            <td colspan="1">Rp. 62,404,858</td>
-        </tr>
-        <tr>
-            <td colspan="6" class="text-right">PPN 11%</td>
-            <td colspan="1">Rp. 6,864,534</td>
-        </tr>
-        <tr>
-            <td colspan="6" class="text-right">Total + PPN</td>
-            <td colspan="1">Rp. 69,269,392</td>
+            <td colspan="4" class="text-right">Total + PPN</td>
+            <td colspan="1">Rp. 18,131,184</td>
         </tr>
     </tbody>
 </table>
-<p><strong>Note:</strong> Pembayaran Max 25 Hari Setelah Tanggal Invoice</p>
+<p class="col-8">Mohon dapat segera diberikan order konfirmasi/persetujuan atas penjualan kami ini. Atas
+    perhatian dan kerjasamanya kami ucapkan terimakasih</p>
 
 <div class="margin-top">
     <table class="w-full">
         <tr>
-            <td class="w-half text-center">
-                <div class="mb-4">Penerima</div>
-                <br>
-                <br>
-                <div>(.............................)</div>
-            </td>
             <td class="w-half text-center">
                 <div class="mb-4">Hormat Kami</div>
                 <br>
